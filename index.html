@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="container" class="container">
+            <h1 class="form-title">Select Test Options</h1>
+            <h3 class="selector-title">Number of Questions</h3>
+            <input id="questionQuantity" class="num-questions" type="number" value='10' min='1' max='50'>
+            <h3 class="selector-title">Number of Questions</h3>
+            <select id="categories" class="categories">
+                <option value="any"> Any Category </option>
+            </select>
+            <h3 class="selector-title">Select Category:</h3>
+            <select id="difficulty" class="categories">
+                <option value="any">Any Difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <h3 class="selector-title">Select Type:</h3>
+            <select id="questionType" class="categories">
+                <option value="any">Any Type</option>
+                <option value="multiple">Multiple Choice</option>
+                <option value="boolean">True/False</option>
+            </select>
+            <a><button id="startTest" type="submit" class="start-test">start test</button></a>
+        </div>
+    </div>
+    <div id="testWrapper" class="wrapper">
+        <ul class="container" id="test"></ul>
+    </div>
+    <div class="wrapper" >
+    <div class="container">
+        <button id="finishTest" class="empty-page">finish test</button>
+    </div>
+</div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
