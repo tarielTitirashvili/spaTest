@@ -88,8 +88,6 @@ function createList(test) {
         let booleanRandom = Math.floor(Math.random()*2)
         answerArray.splice(booleanRandom, 0, test.correct_answer)
         createAnswer(test, answerArray, question)
-        console.log(answerArray)
-        console.log(test.correct_answer)
     }
 }
 // adding answers in html dom
